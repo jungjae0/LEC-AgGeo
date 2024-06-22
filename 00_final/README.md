@@ -26,8 +26,8 @@
 
 2) 위성영상 기반 식생지수 데이터
 - Google Earth Engine에서 Sentinel-2, Landsat-8 위성영상에서 식생지수 데이터를 수집하였다.
-  - 위성영상 기반 식생지수 데이터 수집: [02_save_satellite.py](./02_save_satellite.py)
-  - 논 영역 필터링 및 통계값 데이터 수집: [03_masking_field.py](./03_masking_field.py)
+  - 위성영상 기반 식생지수 데이터 수집: [02_save_satellite.py](02_save_satellite.py)
+  - 논 영역 필터링 및 통계값 데이터 수집: [03_masking_field.py](03_masking_field.py)
 
 3) 기상 데이터
 - 기상청에서 제공하는 기상 데이터를 수집하였다.
@@ -38,14 +38,14 @@
 
 5) EDA
 - 위성영상 구름 마스킹 여부에 따른 차이를 확인하였다.
-  -  위성 영상과 무인비행체 영상 처리: [./EDA/01_preprocess_drone.py](./EDA/01_preprocess_drone.py), [./EDA/02_preprocess_gee.py](./EDA/02_preprocess_gee.py)
+  -  위성 영상과 무인비행체 영상 처리: [EDA/01_preprocess_drone.py](EDA/01_preprocess_drone.py), [EDA/02_preprocess_gee.py](EDA/02_preprocess_gee.py)
 - 연도별 월별 기상 정보 변화를 확인하였다.
 - 농작물 생산량의 변화를 확인하였다.
-- 그래프: [./EDA/02_draw_results.py](./EDA/02_draw_results.py)
+- 그래프: [EDA/02_draw_results.py](EDA/02_draw_results.py)
 
 
 6) 위성영상 데이터와 기상 데이터를 결합하여 머신러닝 모델을 학습하고, 생산량을 예측하였다.
-- 전체 데이터 병합: [04_preprocess_datas.py](./04_preprocess_datas.py)
-- 머신러닝 모델 학습 및 예측: [05_models.py](./05_models.py)
+- 전체 데이터 병합: [04_preprocess_datas.py](04_preprocess_datas.py)
+- 머신러닝 모델 학습 및 예측: [05_models.py](05_models.py)
 
 
